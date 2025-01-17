@@ -13,8 +13,8 @@ public class program {
         System.out.print("enter file path: ");
         String srf = sc.nextLine();
 
-        File file = new File(srf);
-        String folderpath = file.getParent();
+        File filePath = new File(srf);
+        String folderpath = "C:\\IdeaProjects\\primeiro projeto\\src\\curso\\src\\passo14_trabalhando_com_arquivos\\atividade";
         boolean success = new File(folderpath + "//out").mkdir();
 
         String targetFileStr = folderpath + "\\out\\summary.csv";
@@ -47,6 +47,8 @@ public class program {
         catch (IOException e){
             System.out.println("ERROR read: "+e.getMessage());
         }
+
+
 
         sc.close();
     }
